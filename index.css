@@ -64,7 +64,7 @@ header {
 }
 
 .slideshow {
-    height: 88vh;
+    height: 100vh;
     position: fixed;
     top: 60vh;
     width: 100%;
