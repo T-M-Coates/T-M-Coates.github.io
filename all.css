@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1E1E1E;
+    color: #1E1E1E;
+    margin: 0;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 0;
+    transition: 0.8s;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
+    transition: 0.8s;
+}
+
+h3 {
+    font-size: 32px;
+    height: fit-content;
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+}
+
+a {
+    color: #1E1E1E;
+    text-decoration: none;
+}

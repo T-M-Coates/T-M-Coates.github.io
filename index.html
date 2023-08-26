@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teilo Coates</title>
+    <link href='all.css' media="all" rel="stylesheet" type="text/css"/>
+    <link href='index.css' media="all" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<header>
+    <div class="header_main" id="header">
+        <h1 id="h1">Teilo Coates</h1>
+        <h2 id="h2">Websites, Photography</h2>
+    </div>
+    <div id="links">
+        <a href="#Home">Home</a>
+        <a href="#Websites">Websites</a>
+        <a href="#Photography">Photography</a>
+        <a href="https://www.instagram.com/teilo_.c/">Instagram</a>
+    </div>
+    <div id="down"><p>Scroll for more</p></div>
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.height = "10vh";
+                document.getElementById("header").style.width = "30%";
+                document.getElementById("header").style.backgroundColor = "transparent";
+                document.getElementById("h1").style.fontSize = "32px";
+                document.getElementById("h2").style.fontSize = "16px";
+                document.getElementById("links").style.opacity = "1";
+                document.getElementById("down").style.opacity = "0";
+            } else {
+                document.getElementById("header").style.height = "100vh";
+                document.getElementById("header").style.width = "100vw";
+                document.getElementById("header").style.backgroundColor = "#E6E6E6";
+                document.getElementById("h1").style.fontSize = "64px";
+                document.getElementById("h2").style.fontSize = "32px";
+                document.getElementById("links").style.opacity = "0";
+                document.getElementById("down").style.opacity = "1";
+            }
+        }
+    </script>
+</header>
+<div class="slideshow" id="Slideshow">
+    <div class="slideshow-container">
+        <img alt="" class="mySlides slider_image slider_fade slide" src='1.JPG'>
+        <img alt="" class="mySlides slider_image slider_fade slide" src='2.JPG'>
+        <img alt="" class="mySlides slider_image slider_fade slide" src='3.JPG'>
+        <img alt="" class="mySlides slider_image slider_fade slide" src='4.JPG'>
+    </div>
+</div>
+<div id="Home" style="height: 100vh; width: 100vw; display: flex; align-items: end"></div>
+<div id="Websites" style="height: 0; width: 100vw; display: flex; align-items: end"></div>
+<div class="websites">
+    <h3><u>Websites</u></h3>
+    <div class="website_display">
+        <h4>Woosc - Wickwar Out of School Club</h4>
+        <iframe src="https://t-m-coates.github.io/woosc-website/"></iframe>
+    </div>
+</div>
+
+<div class="photography" id="Photography">
+    <h3><u>Photography</u></h3>
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="gallery-filter">
+                    <span class="filter-item active" data-filter="all">all</span>
+                    <span class="filter-item" data-filter="animals">Animals</span>
+                    <span class="filter-item" data-filter="dogs">Dogs</span>
+                    <span class="filter-item" data-filter="landscapes">Landscapes</span>
+                    <span class="filter-item" data-filter="buildings">Buildings</span>
+                    <span class="filter-item" data-filter="other">Others</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="shoe"
+                             src="images/image%20(1).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="headphone"
+                             src="images/image%20(2).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(3).JPG">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="headphone"
+                             src="images/image%20(4).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(5).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="phone"
+                             src="images/image%20(6).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item landscapes">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(7).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item landscapes">
+                    <div class="gallery-item-inner">
+                        <img alt="watch"
+                             src="images/image%20(8).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="shoe"
+                             src="images/image%20(9).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item dogs">
+                    <div class="gallery-item-inner">
+                        <img alt="headphone"
+                             src="images/image%20(10).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item dogs">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(11).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item landscapes">
+                    <div class="gallery-item-inner">
+                        <img alt="headphone"
+                             src="images/image%20(12).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item other">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(13).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item buildings">
+                    <div class="gallery-item-inner">
+                        <img alt="phone"
+                             src="images/image%20(14).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item buildings">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(15).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item other">
+                    <div class="gallery-item-inner">
+                        <img alt="watch"
+                             src="images/image%20(16).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item landscapes">
+                    <div class="gallery-item-inner">
+                        <img alt="shoe"
+                             src="images/image%20(17).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item dogs">
+                    <div class="gallery-item-inner">
+                        <img alt="headphone"
+                             src="images/image%20(18).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(19).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item buildings">
+                    <div class="gallery-item-inner">
+                        <img alt="headphone"
+                             src="images/image%20(20).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(21).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item other">
+                    <div class="gallery-item-inner">
+                        <img alt="phone"
+                             src="images/image%20(22).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item dogs">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(23).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item landscapes">
+                    <div class="gallery-item-inner">
+                        <img alt="watch"
+                             src="images/image%20(24).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item dogs">
+                    <div class="gallery-item-inner">
+                        <img alt="shoe"
+                             src="images/image%20(25).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="headphone"
+                             src="images/image%20(26).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(27).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item animals">
+                    <div class="gallery-item-inner">
+                        <img alt="headphone"
+                             src="images/image%20(28).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item landscapes">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(29).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item landscapes">
+                    <div class="gallery-item-inner">
+                        <img alt="phone"
+                             src="images/image%20(30).jpg">
+                    </div>
+                </div>
+                <div class="gallery-item landscapes">
+                    <div class="gallery-item-inner">
+                        <img alt="camera"
+                             src="images/image%20(31).jpg">
+                    </div>
+                </div>
+                <!-- gallery item start -->
+                <div class="gallery-item buildings">
+                    <div class="gallery-item-inner">
+                        <img alt="watch"
+                             src="images/image%20(32).jpg">
+                    </div>
+                </div>
+                <!-- gallery item end -->
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.left = "0";
+        setTimeout(hideSlides, 800);
+    }
+
+    function hideSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < slides.length; i++) {
+            if (i !== slideIndex - 1) {
+                slides[i].style.left = "110vw";
+            }
+        }
+        setTimeout(showSlides, 5000);
+    }
+
+
+    const filterContainer = document.querySelector(".gallery-filter"),
+        galleryItems = document.querySelectorAll(".gallery-item");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            // deactivate existing active 'filter-item'
+            filterContainer.querySelector(".active").classList.remove("active");
+            // activate new 'filter-item'
+            event.target.classList.add("active");
+            const filterValue = event.target.getAttribute("data-filter");
+            galleryItems.forEach((item) => {
+                if (item.classList.contains(filterValue) || filterValue === 'all') {
+                    item.classList.remove("hide");
+                    item.classList.add("show");
+                } else {
+                    item.classList.remove("show");
+                    item.classList.add("hide");
+                }
+            });
+        }
+    });
+
+</script>
+</body>
+</html>
