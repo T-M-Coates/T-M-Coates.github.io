@@ -15,6 +15,7 @@
     <div class="header_main" id="header">
         <h1 id="h1">Teilo Coates</h1>
         <h2 id="h2">Websites, Photography</h2>
+        <div id="down"><p>Scroll for more</p></div>
     </div>
     <div id="links">
         <a href="#Home">Home</a>
@@ -22,7 +23,6 @@
         <a href="#Photography">Photography</a>
         <a href="https://www.instagram.com/teilo_.c/">Instagram</a>
     </div>
-    <div id="down"><p>Scroll for more</p></div>
     <script>
         window.onscroll = function () {
             scrollFunction()
@@ -52,16 +52,7 @@
         }
     </script>
 </header>
-<div class="slideshow" id="Slideshow">
-    <div class="slideshow-container">
-        <img alt="" class="mySlides slider_image slider_fade slide" src='images/1.JPG'>
-        <img alt="" class="mySlides slider_image slider_fade slide" src='images/2.JPG'>
-        <img alt="" class="mySlides slider_image slider_fade slide" src='images/3.jpg'>
-        <img alt="" class="mySlides slider_image slider_fade slide" src='images/4.jpg'>
-        <img alt="" class="mySlides slider_image slider_fade slide" src='images/5.JPG'>
-    </div>
-</div>
-<div id="Home" style="height: 125vh; width: 100vw; display: flex; align-items: end"></div>
+<div id="Home" style="height: 25vh; width: 100vw; display: flex; align-items: end"></div>
 <div id="Websites" style="height: 0; width: 100vw; display: flex; align-items: end"></div>
 <div class="websites">
     <h3 id="WOOSCWebsite"><u>Websites</u></h3>
@@ -105,27 +96,31 @@
         </div>
     </div>
 
-    <div id="MattWebsite" style="height: 8vh"></div>
+    <div id="klbWebsite" style="height: 8vh"></div>
     <div class="website_display">
         <h4>
-            <a href="https://t-m-coates.github.io/matt-conradi/">
-                <button class="btn pop-underline" type="button">Matt Conradi - Portfolio</button>
+            <a href="https://hap.klbschool.org.uk/intranet/">
+                <button class="btn pop-underline" type="button">KLB School Intranet Page</button>
             </a>
         </h4>
         <div class="website_wrap">
-            <a class="iframe_box" href="#MattWebsite" id="mattIframeBox" onclick="open_matt()">
-                <iframe id="mattIframe" src="https://t-m-coates.github.io/matt-conradi/"></iframe>
-                <h3 class="iframe_text" id="mattIframeText">To see full website, click here.</h3>
+            <a class="iframe_box" href="#klbWebsite" id="klbIframeBox" onclick="open_klb()">
+                <iframe id="klbIframe" src="https://hap.klbschool.org.uk/intranet/"></iframe>
+                <h3 class="iframe_text" id="klbIframeText">To see full website, click here.</h3>
             </a>
-            <div class="website_text_wrap" id="mattText">
-                <h4 class="website_text">Matt Conradi - Portfolio</h4>
-                <p class="website_text">For this website I was asked about making a portfolio website using a website
-                    builder tool. He wanted a simple, clean design which highlighted his areas of work.
-                    I kept the website simple and easy to navigate and using a while colour gradient for a professional
-                    finish.</p>
+            <div class="website_text_wrap" id="klbText">
+                <h4 class="website_text">KLB School Intranet</h4>
+                <p class="website_text">For this website I was asked to update an old intranet page into a more modern
+                    version. This was intended to be used for searching, so included a Google search bar as well as
+                    some quick links to commonly used webpages. I also made it so the background would refresh each time
+                    the page was loaded.</p>
                 <div class="website_text_bottom">
                     <button class="btn pop-underline website_button pointer" disabled="disabled"
-                            onclick="close_matt()">
+                            onclick="klb_refresh()">
+                        Refresh
+                    </button>
+                    <button class="btn pop-underline website_button pointer" disabled="disabled"
+                            onclick="close_klb()">
                         Close
                     </button>
                 </div>
@@ -143,17 +138,7 @@
         <img alt="image" class="modal-content" id="img01">
     </section>
     <div class="photography_container">
-        <div class="photography_selector">
-            <a id="animalsText" onclick="selectPictures('animals')">Animals</a>
-            <a id="dogsText" onclick="selectPictures('dogs')">Dogs</a>
-            <a id="landscapesText" onclick="selectPictures('landscapes')"
-               style="background-color: #bbbbbb">Landscapes</a>
-            <a id="buildingsText" onclick="selectPictures('buildings')">Buildings</a>
-            <a id="otherText" onclick="selectPictures('other')">Others</a>
-        </div>
-
         <div class="photography_row" id="animals">
-            <div class="scroll-container">
                 <img alt="image" class="image" id="1" onclick="modalFunction('1')" src="images/gallery/image%20(1).jpg">
                 <img alt="image" class="image" id="2" onclick="modalFunction('2')" src="images/gallery/image%20(2).jpg">
                 <img alt="image" class="image" id="3" onclick="modalFunction('3')" src="images/gallery/image%20(3).JPG">
@@ -175,10 +160,7 @@
                      src="images/gallery/image%20(33).jpg">
                 <img alt="image" class="image" id="35" onclick="modalFunction('35')"
                      src="images/gallery/image%20(35).jpg">
-            </div>
-        </div>
-        <div class="photography_row" id="landscapes" style="display: flex">
-            <div class="scroll-container">
+
                 <img alt="image" class="image" id="7" onclick="modalFunction('7')" src="images/gallery/image%20(7).jpg">
                 <img alt="image" class="image" id="8" onclick="modalFunction('8')" src="images/gallery/image%20(8).jpg">
                 <img alt="image" class="image" id="12" onclick="modalFunction('12')"
@@ -193,10 +175,7 @@
                      src="images/gallery/image%20(30).jpg">
                 <img alt="image" class="image" id="31" onclick="modalFunction('31')"
                      src="images/gallery/image%20(31).jpg">
-            </div>
-        </div>
-        <div class="photography_row" id="dogs">
-            <div class="scroll-container">
+
                 <img alt="image" class="image" id="10" onclick="modalFunction('10')"
                      src="images/gallery/image%20(10).jpg">
                 <img alt="image" class="image" id="11" onclick="modalFunction('11')"
@@ -207,10 +186,7 @@
                      src="images/gallery/image%20(23).jpg">
                 <img alt="image" class="image" id="25" onclick="modalFunction('25')"
                      src="images/gallery/image%20(25).jpg">
-            </div>
-        </div>
-        <div class="photography_row" id="buildings">
-            <div class="scroll-container">
+
                 <img alt="image" class="image" id="14" onclick="modalFunction('14')"
                      src="images/gallery/image%20(14).jpg">
                 <img alt="image" class="image" id="15" onclick="modalFunction('15')"
@@ -219,10 +195,7 @@
                      src="images/gallery/image%20(20).jpg">
                 <img alt="image" class="image" id="32" onclick="modalFunction('32')"
                      src="images/gallery/image%20(32).jpg">
-            </div>
-        </div>
-        <div class="photography_row" id="other">
-            <div class="scroll-container">
+
                 <img alt="image" class="image" id="13" onclick="modalFunction('13')"
                      src="images/gallery/image%20(13).jpg">
                 <img alt="image" class="image" id="16" onclick="modalFunction('16')"
@@ -231,40 +204,11 @@
                      src="images/gallery/image%20(22).jpg">
                 <img alt="image" class="image" id="34" onclick="modalFunction('34')"
                      src="images/gallery/image%20(34).jpg">
-            </div>
-        </div>
+
     </div>
 </div>
 
 <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let slides = document.getElementsByClassName("mySlides");
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        slides[slideIndex - 1].style.left = "0";
-        setTimeout(hideSlides, 800);
-    }
-
-    function hideSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        for (i = 0; i < slides.length; i++) {
-            if (i !== slideIndex - 1) {
-                slides[i].style.left = "110vw";
-            }
-        }
-        setTimeout(showSlides, 5000);
-    }
-
-
     // Get the modal
     var modalImg = document.getElementById("img01");
     var modal = document.getElementById("myModal");
@@ -286,52 +230,6 @@
 
     section.onclick = function () {
         modal.classList.remove('view');
-    }
-
-    // gallery
-
-    const animals = document.getElementById("animals");
-    const landscapes = document.getElementById("landscapes");
-    const dogs = document.getElementById("dogs");
-    const buildings = document.getElementById("buildings");
-    const other = document.getElementById("other");
-
-    const animalsText = document.getElementById("animalsText");
-    const landscapesText = document.getElementById("landscapesText");
-    const dogsText = document.getElementById("dogsText");
-    const buildingsText = document.getElementById("buildingsText");
-    const otherText = document.getElementById("otherText");
-
-    function selectPictures(type) {
-        animals.style.display = 'none';
-        landscapes.style.display = 'none';
-        dogs.style.display = 'none';
-        buildings.style.display = 'none';
-        other.style.display = 'none';
-
-        animalsText.style.backgroundColor = '#E6E6E6';
-        landscapesText.style.backgroundColor = '#E6E6E6';
-        dogsText.style.backgroundColor = '#E6E6E6';
-        buildingsText.style.backgroundColor = '#E6E6E6';
-        otherText.style.backgroundColor = '#E6E6E6';
-
-        if (type === "animals") {
-            animals.style.display = 'flex';
-            animalsText.style.backgroundColor = '#bbbbbb';
-        } else if (type === "landscapes") {
-            landscapes.style.display = 'flex';
-            landscapesText.style.backgroundColor = '#bbbbbb';
-        } else if (type === "dogs") {
-            dogs.style.display = 'flex';
-            dogsText.style.backgroundColor = '#bbbbbb';
-        } else if (type === "buildings") {
-            buildings.style.display = 'flex';
-            buildingsText.style.backgroundColor = '#bbbbbb';
-        } else if (type === "other") {
-            other.style.display = 'flex';
-            otherText.style.backgroundColor = '#bbbbbb';
-        }
-
     }
 
 
@@ -377,40 +275,43 @@
         iframeWoosc.src = "https://woosc.org.uk/information/the_team/";
     }
 
-    // matt website
+    // KLB website
 
-    const matt = document.getElementById('mattIframeBox');
-    const mattText = document.getElementById('mattText');
-    const mattIframeText = document.getElementById('mattIframeText');
-    const mattIframe = document.getElementById('mattIframe');
+    const klb = document.getElementById('klbIframeBox');
+    const klbText = document.getElementById('klbText');
+    const klbIframeText = document.getElementById('klbIframeText');
+    const klbIframe = document.getElementById('klbIframe');
 
-    function open_matt() {
-        matt.classList.toggle("expanded");
-        mattText.classList.toggle("website_text_wrap_show");
-        mattIframeText.classList.toggle("hidden");
+    function open_klb() {
+        klb.classList.toggle("expanded");
+        klbText.classList.toggle("website_text_wrap_show");
+        klbIframeText.classList.toggle("hidden");
         buttons.forEach((item) => {
             item.toggleAttribute("disabled");
             item.classList.toggle("pointer");
         })
     }
 
-    function close_matt() {
-        matt.classList.toggle("expanded");
-        mattText.classList.toggle("website_text_wrap_show");
-        mattIframeText.classList.toggle("hidden");
-        mattIframe.src = "https://t-m-coates.github.io/matt-conradi/";
+    function close_klb() {
+        klb.classList.toggle("expanded");
+        klbText.classList.toggle("website_text_wrap_show");
+        klbIframeText.classList.toggle("hidden");
+        klbIframe.src = "https://hap.klbschool.org.uk/intranet/";
         buttons.forEach((item) => {
             item.toggleAttribute("disabled");
             item.classList.toggle("pointer");
         })
+    }
+
+    function klb_refresh() {
+        klbIframe.src = "https://hap.klbschool.org.uk/intranet/";
     }
 
 </script>
 </body>
 
 <footer>
-    <p>Copyright Teilo Coates - 2023</p>
-    <p>NOTE: All images have been compressed so may appear blurred.</p>
+    <p>Copyright Teilo Coates - 2024</p>
 </footer>
 
 </html>
