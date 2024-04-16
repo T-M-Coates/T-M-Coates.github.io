@@ -4,314 +4,135 @@
     <meta charset="UTF-8">
     <title>Teilo Coates</title>
     <link href='css/all.css' media="all" rel="stylesheet" type="text/css"/>
-    <link href='css/index.css' media="all" rel="stylesheet" type="text/css"/>
-    <link href='css/slideshow.css' media="all" rel="stylesheet" type="text/css"/>
-    <link href='css/website.css' media="all" rel="stylesheet" type="text/css"/>
     <link href='css/photography.css' media="all" rel="stylesheet" type="text/css"/>
-
+    <link href='css/websites.css' media="all" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<header id="head">
-    <div class="header_main" id="header">
-        <h1 id="h1">Teilo Coates</h1>
-        <h2 id="h2">Websites, Photography</h2>
-        <div id="down"><p>Scroll for more</p></div>
+<div id="loader" class="loader"> </div>
+<header id="header">
+    <div id="title_image" class="title_image z_2"> </div>
+    <div id="title" class="title order_3 z_5">
+        <h1 id="main">Teilo Coates</h1>
+        <h4 id="sub">Websites | Photography</h4>
     </div>
-    <div id="links">
-        <a href="#Home">Home</a>
-        <a href="#Websites">Websites</a>
-        <a href="#Photography">Photography</a>
-        <a href="https://www.instagram.com/teilo_.c/">Instagram</a>
-    </div>
-    <script>
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("header").style.height = "10vh";
-                document.getElementById("header").style.width = "30%";
-                document.getElementById("header").style.backgroundColor = "transparent";
-                document.getElementById("head").style.filter = "drop-shadow(0 0 8px #4f4f4f)";
-                document.getElementById("h1").style.fontSize = "32px";
-                document.getElementById("h2").style.fontSize = "16px";
-                document.getElementById("links").style.opacity = "1";
-                document.getElementById("down").style.opacity = "0";
-            } else {
-                document.getElementById("header").style.height = "100vh";
-                document.getElementById("header").style.width = "100vw";
-                document.getElementById("header").style.backgroundColor = "#E6E6E6";
-                document.getElementById("head").style.filter = "none";
-                document.getElementById("h1").style.fontSize = "64px";
-                document.getElementById("h2").style.fontSize = "32px";
-                document.getElementById("links").style.opacity = "0";
-                document.getElementById("down").style.opacity = "1";
-            }
-        }
-    </script>
+    <a href="#home" id="link_1" class="order_1 z_5">HOME</a>
+    <a href="https://www.instagram.com/teilo_.c/" id="link_2" class="order_2 z_5">INSTAGRAM</a>
+    <a href="#websites" id="link_4" class="order_4 z_5">WEBSITES</a>
+    <a href="#photo" id="link_5" class="order_5 z_5">PHOTOGRAPHY</a>
 </header>
-<div id="Home" style="height: 25vh; width: 100vw; display: flex; align-items: end"></div>
-<div id="Websites" style="height: 0; width: 100vw; display: flex; align-items: end"></div>
-<div class="websites">
-    <h3 id="WOOSCWebsite"><u>Websites</u></h3>
-    <div class="website_display">
-        <h4>
-            <a href="https://woosc.org.uk/">
-                <button class="btn pop-underline" type="button">Woosc - Wickwar Out of School Club</button>
-            </a>
-        </h4>
-        <div class="website_wrap">
-            <a class="iframe_box" href="#WOOSCWebsite" id="wooscIframeBox" onclick="open_woosc()">
-                <iframe id="iframeWoosc" src="https://woosc.org.uk/"></iframe>
-                <h3 class="iframe_text" id="wooscIframeText">To see full website, click here.</h3>
-            </a>
-            <div class="website_text_wrap" id="wooscText">
-                <h4 class="website_text">WOOSC - Wickwar Out of School Club</h4>
-                <p class="website_text">For this website, I was asked to make a fun, colour full, child-friendly
-                    website. I decided that pastel colours would suit this theme nicely and having separators
-                    between sections would add to the fun feeling of the website. WOOSC also asked for the website
-                    to have gallery pages that suit images of any size and a 'meet the team' page that can have a
-                    different number of employees over time.</p>
-                <div class="website_text_bottom">
-                    <button class="btn pop-underline website_button pointer" disabled="disabled"
-                            onclick="woosc_link_home()">
-                        Home
-                    </button>
-                    <button class="btn pop-underline website_button pointer" disabled="disabled"
-                            onclick="woosc_link_gallery()">
-                        Gallery
-                    </button>
-                    <button class="btn pop-underline website_button pointer" disabled="disabled"
-                            onclick="woosc_link_team()">
-                        Meet the Team
-                    </button>
-                    <button class="btn pop-underline website_button pointer" disabled="disabled"
-                            onclick="close_woosc()">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="klbWebsite" style="height: 8vh"></div>
-    <div class="website_display">
-        <h4>
-            <a href="https://hap.klbschool.org.uk/intranet/">
-                <button class="btn pop-underline" type="button">KLB School Intranet Page</button>
-            </a>
-        </h4>
-        <div class="website_wrap">
-            <a class="iframe_box" href="#klbWebsite" id="klbIframeBox" onclick="open_klb()">
-                <iframe id="klbIframe" src="https://hap.klbschool.org.uk/intranet/"></iframe>
-                <h3 class="iframe_text" id="klbIframeText">To see full website, click here.</h3>
-            </a>
-            <div class="website_text_wrap" id="klbText">
-                <h4 class="website_text">KLB School Intranet</h4>
-                <p class="website_text">For this website I was asked to update an old intranet page into a more modern
-                    version. This was intended to be used for searching, so included a Google search bar as well as
-                    some quick links to commonly used webpages. I also made it so the background would refresh each time
-                    the page was loaded.</p>
-                <div class="website_text_bottom">
-                    <button class="btn pop-underline website_button pointer" disabled="disabled"
-                            onclick="klb_refresh()">
-                        Refresh
-                    </button>
-                    <button class="btn pop-underline website_button pointer" disabled="disabled"
-                            onclick="close_klb()">
-                        Close
-                    </button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="photography" id="Photography">
-    <h2><u>Photography</u></h2>
-
-    <section class="modal" id="myModal">
-        <span class="close">&times;</span>
-        <img alt="image" class="modal-content" id="img01">
-    </section>
+<div id="home" style="height: 100vh"> </div>
+<section id="photo" class="photography">
     <div class="photography_container">
-        <div class="photography_row" id="animals">
-                <img alt="image" class="image" id="1" onclick="modalFunction('1')" src="images/gallery/image%20(1).jpg">
-                <img alt="image" class="image" id="2" onclick="modalFunction('2')" src="images/gallery/image%20(2).jpg">
-                <img alt="image" class="image" id="3" onclick="modalFunction('3')" src="images/gallery/image%20(3).JPG">
-                <img alt="image" class="image" id="4" onclick="modalFunction('4')" src="images/gallery/image%20(4).jpg">
-                <img alt="image" class="image" id="5" onclick="modalFunction('5')" src="images/gallery/image%20(5).jpg">
-                <img alt="image" class="image" id="6" onclick="modalFunction('6')" src="images/gallery/image%20(6).jpg">
-                <img alt="image" class="image" id="9" onclick="modalFunction('9')" src="images/gallery/image%20(9).jpg">
-                <img alt="image" class="image" id="19" onclick="modalFunction('19')"
-                     src="images/gallery/image%20(19).jpg">
-                <img alt="image" class="image" id="21" onclick="modalFunction('21')"
-                     src="images/gallery/image%20(21).jpg">
-                <img alt="image" class="image" id="26" onclick="modalFunction('26')"
-                     src="images/gallery/image%20(26).jpg">
-                <img alt="image" class="image" id="27" onclick="modalFunction('27')"
-                     src="images/gallery/image%20(27).jpg">
-                <img alt="image" class="image" id="28" onclick="modalFunction('28')"
-                     src="images/gallery/image%20(28).jpg">
-                <img alt="image" class="image" id="33" onclick="modalFunction('33')"
-                     src="images/gallery/image%20(33).jpg">
-                <img alt="image" class="image" id="35" onclick="modalFunction('35')"
-                     src="images/gallery/image%20(35).jpg">
-
-                <img alt="image" class="image" id="7" onclick="modalFunction('7')" src="images/gallery/image%20(7).jpg">
-                <img alt="image" class="image" id="8" onclick="modalFunction('8')" src="images/gallery/image%20(8).jpg">
-                <img alt="image" class="image" id="12" onclick="modalFunction('12')"
-                     src="images/gallery/image%20(12).jpg">
-                <img alt="image" class="image" id="17" onclick="modalFunction('17')"
-                     src="images/gallery/image%20(17).jpg">
-                <img alt="image" class="image" id="24" onclick="modalFunction('24')"
-                     src="images/gallery/image%20(24).jpg">
-                <img alt="image" class="image" id="29" onclick="modalFunction('29')"
-                     src="images/gallery/image%20(29).jpg">
-                <img alt="image" class="image" id="30" onclick="modalFunction('30')"
-                     src="images/gallery/image%20(30).jpg">
-                <img alt="image" class="image" id="31" onclick="modalFunction('31')"
-                     src="images/gallery/image%20(31).jpg">
-
-                <img alt="image" class="image" id="10" onclick="modalFunction('10')"
-                     src="images/gallery/image%20(10).jpg">
-                <img alt="image" class="image" id="11" onclick="modalFunction('11')"
-                     src="images/gallery/image%20(11).jpg">
-                <img alt="image" class="image" id="18" onclick="modalFunction('18')"
-                     src="images/gallery/image%20(18).jpg">
-                <img alt="image" class="image" id="23" onclick="modalFunction('23')"
-                     src="images/gallery/image%20(23).jpg">
-                <img alt="image" class="image" id="25" onclick="modalFunction('25')"
-                     src="images/gallery/image%20(25).jpg">
-
-                <img alt="image" class="image" id="14" onclick="modalFunction('14')"
-                     src="images/gallery/image%20(14).jpg">
-                <img alt="image" class="image" id="15" onclick="modalFunction('15')"
-                     src="images/gallery/image%20(15).jpg">
-                <img alt="image" class="image" id="20" onclick="modalFunction('20')"
-                     src="images/gallery/image%20(20).jpg">
-                <img alt="image" class="image" id="32" onclick="modalFunction('32')"
-                     src="images/gallery/image%20(32).jpg">
-
-                <img alt="image" class="image" id="13" onclick="modalFunction('13')"
-                     src="images/gallery/image%20(13).jpg">
-                <img alt="image" class="image" id="16" onclick="modalFunction('16')"
-                     src="images/gallery/image%20(16).jpg">
-                <img alt="image" class="image" id="22" onclick="modalFunction('22')"
-                     src="images/gallery/image%20(22).jpg">
-                <img alt="image" class="image" id="34" onclick="modalFunction('34')"
-                     src="images/gallery/image%20(34).jpg">
-
+        <h2 >PHOTOGRAPHY</h2>
+        <div class="row">
+            <div class="column">
+                <img class="picture_box z_1" src="images/photography/Photo%20(3).JPG" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(1).JPG" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(9).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(4).JPG" style="width: 100%">
+            </div>
+            <div class="column">
+                <img class="picture_box z_1" src="images/photography/Photo%20(6).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(7).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(8).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(2).JPG" style="width: 100%">
+            </div>
+            <div class="column">
+                <img class="picture_box z_1" src="images/photography/Photo%20(15).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(14).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(11).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(12).jpg" style="width: 100%">
+            </div>
+            <div class="column">
+                <img class="picture_box z_1" src="images/photography/Photo%20(10).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(13).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(16).jpg" style="width: 100%">
+                <img class="picture_box z_1" src="images/photography/Photo%20(5).JPG" style="width: 100%">
+            </div>
+        </div>
     </div>
-</div>
-
-<script>
-    // Get the modal
-    var modalImg = document.getElementById("img01");
-    var modal = document.getElementById("myModal");
-
-
-    function modalFunction(n) {
-        modal.classList.toggle('view')
-        modalImg.src = document.getElementById(n).src;
-    }
-
-    // Get the <span> element that closes the modal
-    const span = document.getElementsByClassName("close")[0];
-    const section = document.getElementsByClassName("modal")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.classList.remove('view');
-    }
-
-    section.onclick = function () {
-        modal.classList.remove('view');
-    }
-
-
-    // website section
-    // woosc website
-
-    const woosc = document.getElementById('wooscIframeBox');
-    const wooscText = document.getElementById('wooscText');
-    const iframeTextWoosc = document.getElementById('wooscIframeText');
-    const iframeWoosc = document.getElementById('iframeWoosc');
-    const buttons = document.querySelectorAll(".website_button");
-
-    function open_woosc() {
-        woosc.classList.toggle("expanded");
-        wooscText.classList.toggle("website_text_wrap_show");
-        iframeTextWoosc.classList.toggle("hidden");
-        buttons.forEach((item) => {
-            item.toggleAttribute("disabled");
-            item.classList.toggle("pointer");
-        })
-    }
-
-    function close_woosc() {
-        woosc.classList.toggle("expanded");
-        wooscText.classList.toggle("website_text_wrap_show");
-        iframeTextWoosc.classList.toggle("hidden");
-        iframeWoosc.src = "https://woosc.org.uk/";
-        buttons.forEach((item) => {
-            item.toggleAttribute("disabled");
-            item.classList.toggle("pointer");
-        })
-    }
-
-    function woosc_link_home() {
-        iframeWoosc.src = "https://woosc.org.uk/";
-    }
-
-    function woosc_link_gallery() {
-        iframeWoosc.src = "https://woosc.org.uk/about/gallery/play/";
-    }
-
-    function woosc_link_team() {
-        iframeWoosc.src = "https://woosc.org.uk/information/the_team/";
-    }
-
-    // KLB website
-
-    const klb = document.getElementById('klbIframeBox');
-    const klbText = document.getElementById('klbText');
-    const klbIframeText = document.getElementById('klbIframeText');
-    const klbIframe = document.getElementById('klbIframe');
-
-    function open_klb() {
-        klb.classList.toggle("expanded");
-        klbText.classList.toggle("website_text_wrap_show");
-        klbIframeText.classList.toggle("hidden");
-        buttons.forEach((item) => {
-            item.toggleAttribute("disabled");
-            item.classList.toggle("pointer");
-        })
-    }
-
-    function close_klb() {
-        klb.classList.toggle("expanded");
-        klbText.classList.toggle("website_text_wrap_show");
-        klbIframeText.classList.toggle("hidden");
-        klbIframe.src = "https://hap.klbschool.org.uk/intranet/";
-        buttons.forEach((item) => {
-            item.toggleAttribute("disabled");
-            item.classList.toggle("pointer");
-        })
-    }
-
-    function klb_refresh() {
-        klbIframe.src = "https://hap.klbschool.org.uk/intranet/";
-    }
-
-</script>
+</section>
+<section id="websites" class="websites">
+    <div class="website_container">
+        <h2>WEBSITES</h2>
+        <div class="website_box">
+            <div class="website_text_box">
+                <a href="https://hap.klbschool.org.uk/intranet/">KLB SCHOOL INTRANET</a>
+            </div>
+            <br>
+            <div class="website_cover"><a href="https://hap.klbschool.org.uk/intranet/">CLICK TO SEE FULL WEBSITE</a></div>
+            <iframe class="website_display" src="https://hap.klbschool.org.uk/intranet/"></iframe>
+        </div>
+        <div class="website_box">
+            <div class="website_text_box">
+                <a href="https://woosc.org.uk">WICKWAR OUT OF SCHOOL CLUB</a>
+            </div>
+            <br>
+            <div class="website_cover"><a href="https://woosc.org.uk">CLICK TO SEE FULL WEBSITE</a></div>
+            <iframe class="website_display" src="https://woosc.org.uk"></iframe>
+        </div>
+    </div>
+</section>
 </body>
-
-<footer>
-    <p>Copyright Teilo Coates - 2024</p>
-</footer>
-
 </html>
+<script>
+    var elements = document.getElementsByClassName("column");
+    var i;
+
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    window.onload = function () {
+        scrollFunction();
+        image_four()
+        document.getElementById("loader").style.opacity = "0";
+        document.getElementById("loader").style.display = "none";
+    };
+
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+            document.getElementById("header").style.height = "10vh";
+            document.getElementById("main").style.color = "#1E1E1E";
+            document.getElementById("sub").style.color = "#1E1E1E";
+            document.getElementById("main").style.fontSize = "2em";
+            document.getElementById("sub").style.fontSize = "1em";
+            document.getElementById("title_image").style.top = "-100vh";
+            document.getElementById("title_image").style.opacity = "0";
+            document.getElementById("link_1").style.color = "#1E1E1E";
+            document.getElementById("link_2").style.color = "#1E1E1E";
+            document.getElementById("link_4").style.color = "#1E1E1E";
+            document.getElementById("link_5").style.color = "#1E1E1E";
+        }
+        else {
+            document.getElementById("header").style.height = "100vh";
+            document.getElementById("main").style.color = "#E6E6E6";
+            document.getElementById("main").style.fontSize = "4em";
+            document.getElementById("sub").style.fontSize = "2em";
+            document.getElementById("sub").style.color = "#E6E6E6";
+            document.getElementById("title_image").style.top = "0";
+            document.getElementById("title_image").style.opacity = "1";
+            document.getElementById("link_1").style.color = "#E6E6E6";
+            document.getElementById("link_2").style.color = "#E6E6E6";
+            document.getElementById("link_4").style.color = "#E6E6E6";
+            document.getElementById("link_5").style.color = "#E6E6E6";
+        }
+    }
+
+    // Four images side by side
+    function image_four() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "25%";  // IE10
+            elements[i].style.flex = "25%";
+        }
+    }
+
+    function home() {
+        document.body.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
+    }
+</script>

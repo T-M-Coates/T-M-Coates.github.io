@@ -1,158 +1,47 @@
 .photography {
-    align-items: center;
-    background-color: #E6E6E6;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    justify-content: center;
+    margin-top: 10vh;
+    padding-bottom: 20vh;
+    padding-top: 10vh;
     width: 100vw;
-}
-
-.photography > h2 {
-    background-color: #E6E6E6;
-    margin-top: 5vh;
-    text-align: center;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start !important;
 }
 
 .photography_container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 20px;
-    width: 100vw;
-}
-
-span {
-    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
-}
-
-.photography_row {
+    width: 80vw;
+    text-align: center;
+    justify-content: center;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding: 0 4px;
 }
 
-div.scroll-container {
-    background-color: #E6E6E6;
-    border-color: #E6E6E6;
-    border-radius: 8px;
-    border-width: 2vw;
+.photography_container h2 {
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+.row {
     display: flex;
-    flex-direction: row;
-    max-height: 700px;
-    overflow-x: scroll;
-    padding: 10px;
-    white-space: nowrap;
-    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-div.scroll-container img {
-    aspect-ratio: 4 / 5;
-    border-radius: 16px;
-    height: 600px;
-    padding: 10px;
-    width: auto;
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    padding: 0 4px;
 }
 
-.image {
-    height: 100%;
-    transition: 0.2s ease;
-    width: 20%;
-}
-
-.image:hover {
-    cursor: pointer;
-    opacity: 0.9;
-}
-
-
-img {
-    max-width: 100%;
+.column img {
+    margin-top: 8px;
     vertical-align: middle;
 }
 
-
-/*responsive*/
-@media (max-width: 491px) {
-    .gallery .gallery-item {
-        width: 50%;
-    }
-}
-
-@media (max-width: 467px) {
-    .gallery .gallery-item {
-        width: 100%;
-    }
-
-    .gallery .gallery-filter .filter-item {
-        margin-bottom: 10px;
-    }
-}
-
-
-/* The Modal (background) */
-.modal {
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-    display: none; /* Hidden by default */
-    height: 100%; /* Full height */
-    left: 0;
-    overflow: auto; /* Enable scroll if needed */
-    padding-top: 100px; /* Location of the box */
-    position: fixed; /* Stay in place */
-    top: 10vh;
-    width: 100%; /* Full width */
-    z-index: 5; /* Sit on top */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-    display: block;
-    margin: auto;
-    max-height: 80%;
-    max-width: 700px;
-    width: auto;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content {
-    animation-duration: 0.6s;
-    animation-name: zoom;
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
-}
-
-/* The Close Button */
-.close {
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
+.picture_box:hover {
+    filter: drop-shadow(0 0 4px #4f4f4f);
+    z-index: 1;
 }

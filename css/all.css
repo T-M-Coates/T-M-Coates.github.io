@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
+    scroll-snap-stop: always;
+    scroll-snap-type: both mandatory;
 }
 
 body {
@@ -11,157 +13,71 @@ body {
     width: 100vw;
 }
 
-h1 {
-    font-size: 64px;
-    margin: 0;
-    transition: 0.8s;
-}
-
-h2 {
-    font-size: 32px;
-    margin: 0;
-    transition: 0.8s;
-}
-
-h3 {
-    font-size: 32px;
-    height: fit-content;
-}
-
-h4 {
-    font-size: 24px;
-    text-align: center;
-}
-
-a {
-    color: #1E1E1E;
-    font-size: 17px;
-    text-decoration: none;
-}
-
-p {
-    font-size: 20px;
-}
-
-.view {
-    display: block !important;
-}
-
-@media screen and (max-width: 1050px) {
-    h1 {
-        font-size: 40px !important;
-    }
-
-    h2 {
-        font-size: 20px !important;
-    }
-
-    h3 {
-        font-size: 50px !important;
-    }
-
-    h4 {
-        font-size: 30px !important;
-    }
-
-    a {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 30px;
-    }
-
-}
-
-
 header {
-    align-items: center;
-    background-color: #E6E6E6;
-    display: flex;
-    justify-content: center;
-    position: fixed;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100vw;
+    height: 10vh;
+    background-color: #D6D6D6;
+    position: fixed;
+    flex-wrap: wrap;
+    transition: 0.8s ease-in-out;
+    scroll-snap-align: center !important;
     z-index: 10;
 }
 
-.header_main {
-    align-items: center;
-    background-color: #E6E6E6;
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    height: 100vh;
-    justify-content: center;
-    top: 0;
-    transition: 0.8s;
-    width: 100vw;
-}
-
-#links {
-    align-items: center;
-    background-color: #E6E6E6;
-    display: flex;
-    height: 10vh;
-    justify-content: center;
-    margin-right: 15px;
-    opacity: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transition: 0.8s;
-    width: max-content;
-}
-
-#links a {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    height: 8vh;
-    justify-content: center;
-    margin-right: 10px;
-    padding: 8px;
-    width: max-content;
-}
-
-#links a:hover {
-    background-color: #D6D6D6;
-}
-
-#down {
-    bottom: 0;
-    position: fixed;
+.title {
     text-align: center;
-    transition: 0.1s;
+}
+
+.title_image {
     width: 100vw;
+    height: 100vh;
+    position: fixed;
+    transition: 0.8s ease-in-out;
+    background-image: url("/images/title_background.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title h1 {transition: 0.8s ease-out;}
+.title h4 {transition: 0.8s ease-out;}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/title_background.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-out;
+    z-index: 11;
 }
 
 
-footer {
-    align-items: center;
-    background-color: #E6E6E6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-}
+/* ----- Set stuff -----*/
+h1 { margin-bottom: 5px}
+h4 { margin-top: 5px}
 
-
-/* --- underlining ---*/
-
-.pop-underline {
+a {
     background: none;
     border: none;
     color: #1E1E1E;
     cursor: pointer;
-    font-size: 20px;
     overflow: hidden;
     position: relative;
     transition: color 600ms ease-in-out;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.pop-underline::after {
+a::after {
     border-bottom: 3px solid #1E1E1E;
     content: "";
     display: block;
@@ -170,18 +86,26 @@ footer {
     position: relative;
     transition: all 450ms ease-in-out;
     width: 1%;
-    z-index: 4;
 }
 
-.pop-underline:hover::after {
+a:hover::after {
     opacity: 1;
     width: 100%;
 }
 
-.pop-underline:hover {
-    color: #1E1E1E;
+a:hover {
+    color: #1E1E1E
 }
 
-.pointer {
-    cursor: initial !important;
-}
+.left { float: left }
+.right { float: right }
+
+.order_1 { order: 1 !important}
+.order_2 { order: 2 !important}
+.order_3 { order: 3 !important}
+.order_4 { order: 4 !important}
+.order_5 { order: 5 !important}
+
+.z_1 { z-index: 1 !important }
+.z_2 { z-index: 2 !important }
+.z_5 { z-index: 5 !important }
